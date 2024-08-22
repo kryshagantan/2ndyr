@@ -1,0 +1,35 @@
+if (choice ==1 )
+                 {
+                     System.out.println("[1] Cookies = 60");
+                     System.out.println("[2] Cupcake = 50");
+                     System.out.println("choose your snacks");
+                     choice = input.nextInt();
+                     
+                     if(choice ==2 ||choice ==1){
+                     System.out.println("[1] americano = 100");
+                     System.out.println("[2] latte = 110");
+                     System.out.println("choose your drinks");
+                     choice = input.nextInt();
+                     }
+                     else{
+                         System.out.println("wrong ansur");
+                     }
+                     
+                 }
+                 else if (choice ==2 )
+                 {
+                     System.out.println("[1] americano = 100");
+                     System.out.println("[2] latte = 110");
+                     System.out.println("choose your drinks");
+                     choice = input.nextInt();
+                     if(choice ==2 ||choice ==1){
+                     System.out.println("[1] Cookies = 60");
+                     System.out.println("[2] Cupcake = 50");
+                     System.out.println("choose your snacks");
+                     choice = input.nextInt();
+                     
+                     }
+                     else{
+                         System.out.println("wrong ansur");
+                     }
+                 }
