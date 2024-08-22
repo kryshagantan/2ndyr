@@ -1,0 +1,20 @@
+public class Gantan {
+
+    public static void main(String[] args) {
+   Scanner input = new Scanner (System.in);
+   System.out.print("Enter 1st Quarter;");
+   int x = input.nextInt();
+   System.out.println("Enter 2nd Quarter;");
+   int y = input.nextInt();
+   System.out.println("Enter 3rd Quarter;");
+   int z = input.nextInt();
+   System.out.println("Enter 4th Quarter;");
+   int a = input.nextInt();
+   
+   int ave = a + x + y +z;//pendas
+   int ab = ave / 4;
+   
+   System.out.print("Average is :" + ab);
+   
+    }
+}
