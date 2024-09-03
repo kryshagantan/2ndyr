@@ -1,0 +1,630 @@
+package com.mycompany.jezpogi;
+import java.util.Scanner;
+/**
+ *
+ * @author CL3-PC21
+ */
+public class Jezpogi {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("[1] - Snacks");
+        System.out.println("[2] - Drinks");
+        
+        System.out.println("Enter your choice:");
+        int ch1 = input.nextInt();
+            
+            
+        
+            //1st if condition snacks and drinks
+            if(ch1==1)
+            {
+            System.out.println("Snacks");
+            System.out.println("[1] - piatos");
+            System.out.println("[2] - nova");
+            
+                System.out.println("Enter your choice:");
+                int ch2 = input.nextInt();
+                //2nd if condition
+                    if(ch2==1)
+                    {
+                    System.out.println("piatos 20.00");
+                    int pia,nova;
+                    pia = 20;
+                    nova = 22;
+                    
+                    System.out.println("Gusto mo drinks? [1] yes [2] no:");
+                    int ch3 = input.nextInt();
+                    
+                        if(ch3==1)
+                        {
+                        System.out.println("Drinks");
+                        System.out.println("[1] = coke");
+                        System.out.println("[2] = water");
+                        
+                            System.out.println("Enter your choice:");
+                            int ch4 = input.nextInt();
+                            
+                                if(ch4==1)
+                                {
+                                System.out.println("Coke 21.00");
+                                int coke,water;
+                                coke = 21;
+                                water = 27;
+                                
+                                int tot;
+                                tot = pia + coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                //piatos and water
+                                if(ch4==2)
+                                {
+                                System.out.println("water 27.00");
+                                int coke,water;
+                                coke = 21;
+                                water = 27;
+                                
+                                int tot;
+                                tot = pia + water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                if(ch4 >= 3)
+                                {
+                                     int tot;
+                                     tot = pia;
+                                     System.out.println("Total is :" + tot);
+                                     System.out.println("Enter your cash:");
+                                     int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                }
+                                
+                        }
+                        if(ch3 == 2)
+                        {
+                            int tot;
+                                tot = pia;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                         if(ch3 >= 3)
+                        {
+                            int tot;
+                                tot = pia;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                        
+                    }
+                    
+                    //nova combination nova + coke , nova + water
+                      if(ch2==2)
+                    {
+                    System.out.println("nova 22.00");
+                    int pia,nova;
+                    pia = 20;
+                    nova = 22;
+                    
+                    System.out.println("Gusto mo drinks? [1] yes [2] no:");
+                    int ch3 = input.nextInt();
+                    
+                        if(ch3==1)
+                        {
+                        System.out.println("Drinks");
+                        System.out.println("[1] = coke");
+                        System.out.println("[2] = water");
+                        
+                            System.out.println("Enter your choice:");
+                            int ch4 = input.nextInt();
+                            
+                                if(ch4==1)
+                                {
+                                System.out.println("Coke 21.00");
+                                int coke,water;
+                                coke = 21;
+                                water = 27;
+                                
+                                int tot;
+                                tot = nova + coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                //piatos and water
+                                if(ch4==2)
+                                {
+                                System.out.println("water 27.00");
+                                int coke,water;
+                                coke = 21;
+                                water = 27;
+                                
+                                int tot;
+                                tot = nova + water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                if(ch4 >= 3)
+                                {
+                                     int tot;
+                                     tot = nova;
+                                     System.out.println("Total is :" + tot);
+                                     System.out.println("Enter your cash:");
+                                     int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                }
+                                
+                        }
+                        if(ch3 == 2)
+                        {
+                            int tot;
+                                tot = nova;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                        if(ch3 >= 3)
+                        {
+                            int tot;
+                                tot = nova;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                        
+                    } 
+                    else if(ch2 >= 3)
+                        {
+                   
+                   System.out.println("Invalid Choice");
+                        
+                        }
+                      
+                
+            }
+            
+            
+            //drinks
+            else if(ch1==2)
+            {
+            System.out.println("Drinks");
+            System.out.println("[1] - coke");
+            System.out.println("[2] - water");
+            
+                System.out.println("Enter your choice:");
+                int ch2 = input.nextInt();
+                //2nd if condition
+                    if(ch2==1)
+                    {
+                    System.out.println("coke 21.00");
+                    int coke,water;
+                    coke = 21;
+                    water = 27;
+                    
+                    System.out.println("Gusto mo foods? [1] yes [2] no:");
+                    int ch3 = input.nextInt();
+                    
+                        if(ch3==1)
+                        {
+                        System.out.println("Snacks");
+                        System.out.println("[1] = piatos");
+                        System.out.println("[2] = nova");
+                        
+                            System.out.println("Enter your choice:");
+                            int ch4 = input.nextInt();
+                            
+                                if(ch4==1)
+                                {
+                                System.out.println("piatos 20.00");
+                                int pia,nova;
+                                pia = 20;
+                                nova = 22;
+                                
+                                int tot;
+                                tot = pia + coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                //piatos and water
+                                if(ch4==2)
+                                {
+                                System.out.println("nova 22.00");
+                                int pia,nova;
+                                pia = 20;
+                                nova = 22;
+                                
+                                int tot;
+                                tot = nova + coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                if(ch4 >= 3)
+                                {
+                                     int tot;
+                                     tot = coke;
+                                     System.out.println("Total is :" + tot);
+                                     System.out.println("Enter your cash:");
+                                     int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                }
+                                
+                        }
+                        if(ch3 == 2)
+                        {
+                            int tot;
+                                tot = coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                         if(ch3 >= 3)
+                        {
+                            int tot;
+                                tot = coke;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                        
+                    }
+                    
+                    //nova combination nova + coke , nova + water
+                      if(ch2==2)
+                    {
+                    System.out.println("water 27.00");
+                    int coke,water;
+                    coke = 21;
+                    water = 27;
+                    
+                    System.out.println("Gusto mo Snacks? [1] yes [2] no:");
+                    int ch3 = input.nextInt();
+                    
+                        if(ch3==1)
+                        {
+                        System.out.println("Snacks");
+                        System.out.println("[1] = piatos");
+                        System.out.println("[2] = nova");
+                        
+                            System.out.println("Enter your choice:");
+                            int ch4 = input.nextInt();
+                            
+                                if(ch4==1)
+                                {
+                                System.out.println("pia 20.00");
+                                int pia,nova;
+                                pia = 20;
+                                nova = 22;
+                                
+                                int tot;
+                                tot = pia + water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                //piatos and water
+                                if(ch4==2)
+                                {
+                                System.out.println("nova 22.00");
+                                int pia,nova;
+                                pia = 20;
+                                nova = 27;
+                                
+                                int tot;
+                                tot = nova + water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                }
+                                if(ch4 >= 3)
+                                {
+                                     int tot;
+                                     tot = water;
+                                     System.out.println("Total is :" + tot);
+                                     System.out.println("Enter your cash:");
+                                     int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                }
+                                
+                        }
+                         if(ch3 == 2)
+                        {
+                            int tot;
+                                tot = water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                          if(ch3 >= 3)
+                        {
+                            int tot;
+                                tot = water;
+                                System.out.println("Total is :" + tot);
+                                System.out.println("Enter your cash:");
+                                int csh = input.nextInt();
+                                
+                                    while(csh<tot)
+                                    {
+                                    System.out.println("Invalid Amount");
+                                    System.out.println("Enter your cash:");
+                                    csh = input.nextInt();
+                                    }
+                                    
+                                    int chnge;
+                                    chnge = csh - tot;
+                                    System.out.println("change is :"+chnge);
+                                
+                                
+                                
+                        }
+                        
+                    }
+                    else if(ch2 >= 3)
+                        {
+                   
+                            System.out.println("Invalid Choice");
+                        
+                        }
+                    
+                
+            
+            }
+             else if(ch1 >= 3)
+               {
+                   
+                   System.out.println("Invalid Choice");
+                        
+               }
+            
+             
+            
+    }
+}
