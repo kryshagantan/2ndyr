@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Activity # 4</title>
+	<style >
+		body{
+			font-family:Georgia, serif;
+			font-size:15px;
+		}
+		td{
+			background-color:gray;
+			color:white;
+		}
+		#Size{
+			width:80%;
+		}
+	</style>
+</head>
+<body style ="background-color:white;">
+	<form action = "payslip.php" method = "POST">
+		<table border = "0" cellpadding ="4" cellspacing ="2" align = "center" width ="350">
+			<tr style ="text-align:center;">
+				<td colspan = "2"><b>Activity # 4</b></td>
+			</tr>
+			<tr>
+				<td>Employee Name:</td>
+				<td><input type ="text" name ="Name" id ="Size"></td>
+			</tr>
+			<tr>
+				<td>Total Days of Work:</td>
+				<td><input type ="text" name ="DoW" id ="Size"></td>
+			</tr>
+			<tr>
+				<td>Daily Rate:</td>
+				<td><input type ="text" name ="DR" id ="Size"></td>
+			</tr>
+			<tr>
+				<td>Cash Advance:</td>
+				<td><input type ="text" name ="CA" id ="Size"></td>
+			</tr>
+			<tr style = "text-align:right;">
+				<td colspan ="2"><input type ="submit" name ="submit" value  = "Compute" style = "width:150px;"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
+</body>
+</html>
+
+
